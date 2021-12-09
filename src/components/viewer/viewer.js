@@ -1,9 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
-import './viewer.css';
 
 // Maserati model
 
-const MODEL_UID = "688d140c74fd4d0f859f8bf52b9ee0be";
+const MODEL_UID = "19f04b255c3849c3ab3b1238ec531640";
 
 //const MODEL_UID = "e8a0dcd94c4142238a606ff5ec34c5ab";
 // const MODEL_UID = "c632823b6c204797bd9b95dbd9f53a06";
@@ -19,10 +18,6 @@ const useSketchfabViewer = () => {
             className="frame"
             ref={viewerIframeRef}
             title="sketchfab-viewer"
-            allowfullscreen
-            mozallowfullscreen = "true"
-            webkitallowfullscreen = "true"
-
         />
     );
 
