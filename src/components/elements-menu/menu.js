@@ -1,39 +1,41 @@
 import React from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCircle, faDharmachakra} from "@fortawesome/free-solid-svg-icons";
+
 
 const Menu = () => {
     return (
-        <div className="main_container">
-            <nav className="navbar">
-                <ul className="nav-links">
-                    <input type="checkbox" id="checkbox_toggle"/>
-                    <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
-                    <div className="menu">
-                        <li className="services">Colour
-                            <ul className="dropdown">
-                                <li><FontAwesomeIcon icon={faCircle} color="blue" size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faCircle} color="red" size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faCircle} color="white" size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faCircle} color="black" size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faCircle} color="silver" size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faCircle} color="grey" size="lg"/></li>
-                            </ul>
-                        </li>
-                        <li className="wheels">
-                            Jantes
-                            <ul className="dropdown">
-                                <li><FontAwesomeIcon icon={faDharmachakra} size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faDharmachakra} size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faDharmachakra} size="lg"/></li>
-                                <li><FontAwesomeIcon icon={faDharmachakra} size="lg"/></li>
-                            </ul>
-                        </li>
-                        <li>Portes</li>
-                        <li>Intérieur</li>
-                    </div>
-                </ul>
-            </nav>
+        <div className="icon-bar">
+            <a href="#">
+                <img src="./media/icon_color/icon_color_normal.png" alt="color"/>
+            </a>
+            <div className="overlay">
+                <a href="#" className="icon">
+                    <img src="./media/icon_color/icon_color_hover.png" alt="hover"/>
+                </a>
+            </div>
+            <a href="#">
+                <img src="./media/icon_wheel/icon_wheel_normal.png" alt="wheel"/>
+            </a>
+            <div className="overlay">
+                <a href="#" className="icon">
+                    <img src="./media/icon_wheel/icon_wheel_hover.png" alt="wheel"/>
+                </a>
+            </div>
+            <a href="#">
+                <img src="./media/icon_door/icon_door_normal.png" alt="door"/>
+            </a>
+            <div className="overlay">
+                <a href="#" className="icon">
+                    <img src="./media/icon_door/icon_door_hover.png" alt="door"/>
+                </a>
+            </div>
+            <a href="#">
+                <img src="./media/icon_view/icon_view_normal.png" alt="view"/>
+            </a>
+            <div className="overlay">
+                <a href="#" className="icon">
+                    <img src="./media/icon_view/icon_view_hover.png" alt="view"/>
+                </a>
+            </div>
 
         </div>
     );
