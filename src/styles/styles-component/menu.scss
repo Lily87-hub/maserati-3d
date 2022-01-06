@@ -2,7 +2,7 @@
   width: 36%;
   height: 10%;
   background-color: rgba(230,230,230,0.3);
-  overflow: auto;
+  //overflow: auto;
   position: fixed;
   bottom: 0;
   border-radius: 5px;
@@ -45,6 +45,7 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 
 //Icon wheel overlay image change
@@ -143,16 +144,190 @@
   z-index: 1;
   border: 1px;
   border-radius: 8px;
-
+  margin-top: -12%;
 }
 
 .dropup-content a {
-  padding: 12px 16px;
+  padding: 10px 14px;
   display: block;
 }
 
-.dropup-content a:hover {background-color: #ccc}
+//.dropup-content a:hover {
+//  background-color: darkblue;
+//  border-radius: 18px;
+//}
 
 .dropup-colour:hover .dropup-content {
   display: flex;
+}
+
+
+//Wheel Dropup
+
+.wheel-dropup {
+  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  backdrop-filter: blur(64px);
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  height: 80%;
+  z-index: 1;
+  border: 1px;
+  border-radius: 8px;
+  margin-top: -12%;
+}
+
+.wheel-dropup a {
+  padding: 10px 14px;
+  display: block;
+}
+
+//.wheel-dropup a:hover {
+//  background-color: darkblue;
+//  border-radius: 18px;
+//}
+
+.dropup-wheel:hover .wheel-dropup {
+  display: flex;
+}
+
+
+//Door Dropup
+
+.door-dropup {
+  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  backdrop-filter: blur(64px);
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  height: 80%;
+  z-index: 1;
+  border: 1px;
+  border-radius: 8px;
+  margin-top: -12%;
+}
+
+.door-dropup a {
+  padding: 10px 14px;
+  display: block;
+}
+
+//.door-dropup a:hover {
+//  background-color: darkblue;
+//  border-radius: 18px;
+//}
+
+.dropup-door:hover .door-dropup {
+  display: flex;
+}
+
+//View Dropup
+
+.view-dropup {
+  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  backdrop-filter: blur(64px);
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  min-height: 260%;
+  z-index: 1;
+  border: 1px;
+  border-radius: 8px;
+  margin-top: -38%;
+}
+
+.view-dropup a {
+  padding: 10px 14px;
+  display: block;
+}
+
+//.view-dropup a:hover {
+//  background-color: darkblue;
+//  border-radius: 18px;
+//  margin-left: 18px;
+//}
+
+.dropup-view:hover .view-dropup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+//Responsive
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .icon-bar {
+    background-color: rgba(250,250,250,0.3);
+    display: grid;
+    width: 20%;
+    height: 40%;
+    margin-bottom: 60px;
+    position: fixed;
+    left: 15px;
+  }
+
+  .icon-bar a {
+    margin-left: 13px;
+    margin-top: -5px;
+  }
+
+  .colour-normal {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wheel-normal {
+    width: 50px;
+    height: 50px;
+  }
+
+  .door-normal {
+    width: 50px;
+    height: 50px;
+  }
+
+  .view-normal {
+    width: 50px;
+    height: 50px;
+  }
+
+  //Icon overlay image change & size
+
+  .colour-hover {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    top: 15px;
+  }
+
+  .wheel-hover {
+    width: 50px;
+    height: 50px;
+  }
+
+  .door-hover {
+    width: 50px;
+    height: 50px;
+  }
+
+  .view-hover {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-colour {
+    padding: 8px;
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s ease;
+    margin-left: 45px;
+  }
+
+  .icon-bar .overlay-colour:hover {
+    opacity: 1;
+  }
+
 }
