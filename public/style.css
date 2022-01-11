@@ -1,0 +1,53 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Open Sans,sans-serif;
+}
+
+#api-frame {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#sketchfab-embed-wrapper {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-left: -90px;
+    margin-top: -12px;
+
+}
+
+#ui_carpaints {
+    position: absolute;
+    bottom: 120px;
+    padding: 15px;
+}
+
+#ui_wheels {
+    position: absolute;
+    bottom: 80px;
+}
+
+#ui_cameras {
+    position: absolute;
+    bottom:40px;
+}
+
+#ui_animations {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+

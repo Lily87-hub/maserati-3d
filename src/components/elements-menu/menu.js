@@ -13,7 +13,10 @@ const Menu = () => {
                         <img src="./media/icon_color/icon_color_hover.png" alt="" className="colour-hover"/>
                     </a>
                 </div>
-                <div className="dropup-content">
+                <div className="colour-dropup">
+                    <a>
+                        <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt="" className="carpaint"/>
+                    </a>
                     <a>
                         <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt="" className="carpaint"/>
                     </a>

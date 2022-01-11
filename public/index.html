@@ -10,6 +10,7 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,12 +26,188 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./app.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
 
     <!-- TODO metttre code sketch en iframe -->
+    <script
+            type="text/javascript"
+            src="https://static.sketchfab.com/api/sketchfab-viewer-1.10.4.js">
+    </script>
+
+    <div id="sketchfab-embed-wrapper" >
+      <iframe  id="api-frame" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+    <div class="icon-bar">
+      <a href="#">
+        <img src="./media/icon_color/icon_color_normal.png" alt="" class="colour-normal"/>
+      </a>
+      <div class="dropup-colour" id="ui_carpaints" >
+        <div class="overlay-colour">
+          <a href="#" class="icon-colour">
+            <img src="./media/icon_color/icon_color_hover.png" alt="" class="colour-hover"/>
+          </a>
+        </div>
+        <div class="colour-dropup">
+          <a>
+            <img src="./media/Vignettes/carpaint_Grigio.png" alt="" class="carpaint" id="CP1"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/carpaint_RossoFolgore.png" alt="" class="carpaint" id="CP2"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt="" class="carpaint" id="CP3"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt="" class="carpaint" id="CP4"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/carpaint_GrigioMaratea.png" alt="" class="carpaint" id="CP5"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt="" class="carpaint" id="CP6"/>
+          </a>
+        </div>
+      </div>
+
+
+
+      <a href="#">
+        <img src="./media/icon_wheel/icon_wheel_normal.png" alt="" class="wheel-normal"/>
+      </a>
+      <div class="dropup-wheel" id="ui_wheels">
+        <div class="overlay-wheel">
+          <a href="#" class="icon-wheel">
+            <img src="./media/icon_wheel/icon_wheel_hover.png" alt="" class="wheel-hover"/>
+          </a>
+        </div>
+        <div class="wheel-dropup">
+          <a>
+            <img src="./media/Vignettes/rim_01_black.png" alt="" class="rim" id="RIM_01"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/rim_01_metal.png" alt="" class="rim" id="RIM_01 W"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/rim_02_black.png" alt="" class="rim" id="RIM_01 B"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/rim_02_metal.png" alt="" class="rim" id="RIM_02"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/rim_02_metal.png" alt="" class="rim" id="RIM_02 W"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/rim_02_metal.png" alt="" class="rim" id="RIM_02 B"/>
+          </a>
+        </div>
+      </div>
+
+
+      <a href="#">
+        <img src="./media/icon_door/icon_door_normal.png" alt="door" class="door-normal"/>
+      </a>
+      <div class="dropup-door" id="ui_animations">
+        <div class="overlay-door">
+          <a href="#" class="icon-door">
+            <img src="./media/icon_door/icon_door_hover.png" alt="porte" class="door-hover"/>
+          </a>
+        </div>
+        <div class="door-dropup">
+          <a>
+            <img src="./media/Vignettes/door_closed.png" alt="" class="door" id="DOORS"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/door_opened.png" alt="" class="door" />
+          </a>
+        </div>
+      </div>
+
+
+
+      <a href="#">
+        <img src="./media/icon_view/icon_view_normal.png" alt="view" class="view-normal"/>
+      </a>
+      <div class="dropup-view" >
+        <div class="overlay-view">
+          <a href="#" class="icon-view">
+            <img src="./media/icon_view/icon_view_hover.png" alt="vue" class="view-hover"/>
+          </a>
+        </div>
+        <div class="view-dropup" id="test">
+          <a>
+            <img src="./media/Vignettes/pov_01_ext.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_02_front_bumper.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_03_headlights.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_04_rim.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_05_side.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_06_rearlights.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_07_plate.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_08_steering_wheel.png" alt="" class="view"/>
+          </a>
+          <a>
+            <img src="./media/Vignettes/pov_09_passenger_seat.png" alt="" class="view"/>
+          </a>
+        </div>
+      </div>
+
+<!--      <div id="ui_cameras" >-->
+<!--                <button id="test">TEST</button>-->
+
+<!--      </div>-->
+
+    </div>
+<!--      <div id="ui_carpaints" >-->
+<!--        <img src="./media/Vignettes/carpaint_Grigio.png" alt="" class="carpaint" id="CP1" />-->
+<!--        <img src="./media/Vignettes/carpaint_RossoFolgore.png" alt="" class="carpaint" id="CP2"/>-->
+<!--        <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt="" class="carpaint" id="CP3"/>-->
+<!--        <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt="" class="carpaint" id="CP4"/>-->
+<!--        <img src="./media/Vignettes/carpaint_GrigioMaratea.png" alt="" class="carpaint" id="CP5"/>-->
+<!--        <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt="" class="carpaint" id="CP6"/>-->
+<!--      </div>-->
+
+<!--      <div id="ui_wheels" >-->
+<!--        <button id="RIM_01">RIM1</button>-->
+<!--        <button id="RIM_01 W">RIM1 W</button>-->
+<!--        <button id="RIM_01 B">RIM1 B</button>-->
+<!--        <button id="RIM_02">RIM2</button>-->
+<!--        <button id="RIM_02 W">RIM2 W</button>-->
+<!--        <button id="RIM_02 B">RIM2 B</button>-->
+<!--      </div>-->
+
+<!--      <div id="ui_cameras" >-->
+<!--        <button id="test">TEST</button>-->
+
+<!--      </div>-->
+
+<!--      <div id="ui_animations" >-->
+<!--        <button id="DOORS">Doors</button>-->
+<!--      </div>-->
+
+
+
+
+
+
 
 
     <!-- TODO remonter tout ca en css par dessus liframe -->
@@ -45,9 +222,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script
-            type="text/javascript"
-            src="https://static.sketchfab.com/api/sketchfab-viewer-1.10.4.js">
-    </script>
+
   </body>
 </html>
