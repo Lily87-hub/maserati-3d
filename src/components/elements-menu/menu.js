@@ -15,19 +15,19 @@ const Menu = () => {
                 </div>
                 <div className="dropup-content">
                     <a>
-                        <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt=""/>
+                        <img src="./media/Vignettes/carpaint_BiancoAlpi.png" alt="" className="carpaint"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/carpaint_Grigio.png" alt=""/>
+                        <img src="./media/Vignettes/carpaint_Grigio.png" alt="" className="carpaint"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/carpaint_GrigioMaratea.png" alt=""/>
+                        <img src="./media/Vignettes/carpaint_GrigioMaratea.png" alt="" className="carpaint"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt=""/>
+                        <img src="./media/Vignettes/carpaint_NeroRibelle.png" alt="" className="carpaint"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/carpaint_RossoFolgore.png" alt=""/>
+                        <img src="./media/Vignettes/carpaint_RossoFolgore.png" alt="" className="carpaint"/>
                     </a>
                 </div>
             </div>
@@ -45,16 +45,16 @@ const Menu = () => {
                 </div>
                 <div className="wheel-dropup">
                     <a>
-                        <img src="./media/Vignettes/rim_01_black.png" alt=""/>
+                        <img src="./media/Vignettes/rim_01_black.png" alt="" className="rim"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/rim_01_metal.png" alt=""/>
+                        <img src="./media/Vignettes/rim_01_metal.png" alt="" className="rim"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/rim_02_black.png" alt=""/>
+                        <img src="./media/Vignettes/rim_02_black.png" alt="" className="rim"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/rim_02_metal.png" alt=""/>
+                        <img src="./media/Vignettes/rim_02_metal.png" alt="" className="rim"/>
                     </a>
                 </div>
             </div>
@@ -71,10 +71,10 @@ const Menu = () => {
                 </div>
                 <div className="door-dropup">
                     <a>
-                        <img src="./media/Vignettes/door_closed.png" alt=""/>
+                        <img src="./media/Vignettes/door_closed.png" alt="" className="door"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/door_opened.png" alt=""/>
+                        <img src="./media/Vignettes/door_opened.png" alt="" className="door"/>
                     </a>
                 </div>
             </div>
@@ -92,31 +92,31 @@ const Menu = () => {
                 </div>
                 <div className="view-dropup">
                     <a>
-                        <img src="./media/Vignettes/pov_01_ext.png" alt=""/>
+                        <img src="./media/Vignettes/pov_01_ext.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_02_front_bumper.png" alt=""/>
+                        <img src="./media/Vignettes/pov_02_front_bumper.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_03_headlights.png" alt=""/>
+                        <img src="./media/Vignettes/pov_03_headlights.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_04_rim.png" alt=""/>
+                        <img src="./media/Vignettes/pov_04_rim.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_05_side.png" alt=""/>
+                        <img src="./media/Vignettes/pov_05_side.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_06_rearlights.png" alt=""/>
+                        <img src="./media/Vignettes/pov_06_rearlights.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_07_plate.png" alt=""/>
+                        <img src="./media/Vignettes/pov_07_plate.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_08_steering_wheel.png" alt=""/>
+                        <img src="./media/Vignettes/pov_08_steering_wheel.png" alt="" className="view"/>
                     </a>
                     <a>
-                        <img src="./media/Vignettes/pov_09_passenger_seat.png" alt=""/>
+                        <img src="./media/Vignettes/pov_09_passenger_seat.png" alt="" className="view"/>
                     </a>
                 </div>
             </div>

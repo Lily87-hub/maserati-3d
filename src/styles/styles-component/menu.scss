@@ -292,42 +292,107 @@
     height: 50px;
   }
 
-  //Icon overlay image change & size
+  //Icon overlay image change & size for colour
 
   .colour-hover {
     width: 50px;
     height: 50px;
-    margin-left: 20px;
-    top: 15px;
+  }
+  .overlay-colour {
+    left: 6.5%;
+    top: -25px;
   }
 
-  .wheel-hover {
+  .carpaint {
     width: 50px;
     height: 50px;
   }
 
+  .dropup-content {
+    min-width: 320%;
+    height: 50%;
+    margin-top: -56%;
+    left: 102%;
+  }
+
+  .dropup-colour:hover .dropup-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+  //Icon overlay image change & size for wheel
+  .wheel-hover {
+    width: 50px;
+    height: 50px;
+  }
+  .overlay-wheel {
+    left: 7%;
+    top: 48px;
+  }
+  .rim {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wheel-dropup {
+    min-width: 320%;
+    height: 50%;
+    margin-top: -42%;
+    left: 102%;
+  }
+
+  .dropup-wheel:hover .wheel-dropup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+  //Icon overlay image change & size for door
   .door-hover {
     width: 50px;
     height: 50px;
   }
 
+  .overlay-door {
+    left: 7%;
+    top: 121.5px;
+  }
+  .door {
+    width: 50px;
+    height: 50px;
+  }
+  .door-dropup {
+    min-width: 220%;
+    height: 28%;
+    margin-top: -42%;
+    left: 102%;
+  }
+
+
+  //Icon overlay image change & size for view
   .view-hover {
     width: 50px;
     height: 50px;
   }
 
-  .icon-colour {
-    padding: 8px;
-    position: absolute;
-    top: 8px;
-    bottom: 0;
-    opacity: 0;
-    transition: .3s ease;
-    margin-left: 45px;
+  .overlay-view {
+    left: 7%;
+    top: 195px;
   }
 
-  .icon-bar .overlay-colour:hover {
-    opacity: 1;
+  .view {
+    width: 50px;
+    height: 50px;
+  }
+
+  .view-dropup {
+    min-width: 320%;
+    min-height: 78%;
+    margin-top: -243%;
+    left: 102%;
   }
 
 }

@@ -19,15 +19,12 @@ img {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  body{
-    background-color: #1CAAD9;
-  }
 
   img {
     position: absolute;
     top: 17px;
-    margin-left: 12%;
-    width: 150px;
-    height: 100px;
+    margin-left: 10%;
+    width: 170px;
+    height: 70px;
   }
 }
