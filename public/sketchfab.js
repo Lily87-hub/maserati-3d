@@ -21,7 +21,7 @@ export class SketchFabViewer {
         this.currentAnimationID = -1;
         this.forward = false;
 
-        this.defaultCamConstraints = { 
+        this.defaultCamConstraints = {
             down: 0.1,
             zoomIn: 0,
             zoomOut: 5,
@@ -31,7 +31,7 @@ export class SketchFabViewer {
             useZoomConstraints: true,
         };
 
-        this.noCamConstraints = { 
+        this.noCamConstraints = {
             up: 1.5,
             down: -1.5,
             left: -3.14,
@@ -44,7 +44,7 @@ export class SketchFabViewer {
             useZoomConstraints: true,
         };
 
-        this.exterLargeCamConstraints = { 
+        this.exterLargeCamConstraints = {
             down: 0.1,
             zoomIn: 4,
             zoomOut: 10,
@@ -54,7 +54,7 @@ export class SketchFabViewer {
             useZoomConstraints: true,
         };
 
-        this.inter1CamConstraints = { 
+        this.inter1CamConstraints = {
            /* up: 1.5,
             down: -0.3,
             left: -1.25,
@@ -68,7 +68,7 @@ export class SketchFabViewer {
             useZoomConstraints: true,
         };
 
-        this.inter2CamConstraints = { 
+        this.inter2CamConstraints = {
            /* up: 1.5,
             down: 0,*/
             down: 0.1,
@@ -80,10 +80,10 @@ export class SketchFabViewer {
             useZoomConstraints: true,
         };
 
-        this.testCamConstraints = { 
+        this.testCamConstraints = {
             /* up: 1.5,
              down: 0,*/
-            
+
              zoomIn: 0,
              zoomOut: 0,
              usePanConstraints: true,
@@ -92,7 +92,7 @@ export class SketchFabViewer {
              useZoomConstraints: true,
          };
 
-        this.inter3CamConstraints = { 
+        this.inter3CamConstraints = {
             down: 0.1,
             zoomIn: 0,
             zoomOut: 0,
@@ -111,14 +111,24 @@ export class SketchFabViewer {
 
         document.getElementById('RIM_01').onclick = ()=>this.selectOptionRIM(this,'RIM_01');
         document.getElementById('RIM_01 W').onclick = ()=>this.setRimColor(this,'RIM_01', 'chrome');
-        document.getElementById('RIM_01 B').onclick = ()=>this.setRimColor(this,'RIM_01', 'black');
+        // document.getElementById('RIM_01 B').onclick = ()=>this.setRimColor(this,'RIM_01', 'black');
         document.getElementById('RIM_02').onclick = ()=>this.selectOptionRIM(this,'RIM_02');
-        document.getElementById('RIM_02 W').onclick = ()=>this.setRimColor(this,'RIM_02', 'chrome');
+        // document.getElementById('RIM_02 W').onclick = ()=>this.setRimColor(this,'RIM_02', 'chrome');
         document.getElementById('RIM_02 B').onclick = ()=>this.setRimColor(this,'RIM_02', 'black');
 
         document.getElementById('DOORS').onclick = ()=>this.setAnimation(this,0);
 
-        document.getElementById('test').onclick = ()=>this.setCamConstraints(this,8);
+        // document.getElementById('test').onclick = ()=>this.setCamConstraints(this,8);
+
+        document.getElementById('pov_0').onclick = ()=>this.setCamera(this, 0);
+        document.getElementById('pov_1').onclick = ()=>this.setCamera(this, 1);
+        document.getElementById('pov_2').onclick = ()=>this.setCamera(this, 2);
+        document.getElementById('pov_3').onclick = ()=>this.setCamera(this, 3);
+        document.getElementById('pov_4').onclick = ()=>this.setCamera(this, 4);
+        document.getElementById('pov_5').onclick = ()=>this.setCamera(this, 5);
+        document.getElementById('pov_6').onclick = ()=>this.setCamera(this, 6);
+        document.getElementById('pov_7').onclick = ()=>this.setCamera(this, 7);
+        document.getElementById('pov_8').onclick = ()=>this.setCamera(this, 8);
 
         this.initSketchfabClient();
 
@@ -198,6 +208,7 @@ export class SketchFabViewer {
                                     self.carpaints.push(item);
                                 }
 
+
                                 if (item.name === 'EXT_rim') {
 
                                     self.rimMaterials['RIM_01'].chrome = item;
@@ -235,7 +246,7 @@ export class SketchFabViewer {
                             api.getAnnotationList(function(err, annotations) {
                                 if (!err) {
                                     annotations.forEach((item, index) => {
-                                        let btn = document.createElement("button");
+                                        let btn = document.createElement("img");
                                         btn.innerHTML = item.name;
                                         document.getElementById('ui_cameras').appendChild(btn);
                                         btn.onclick = ()=>self.setCamera(self,index);
@@ -306,7 +317,7 @@ export class SketchFabViewer {
                             });
 
                             //set default cam constraints
-                            api.setCameraConstraints(self.defaultCamConstraints, {});
+                            // api.setCameraConstraints(self.defaultCamConstraints, {});
 
                            
 
