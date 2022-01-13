@@ -1,11 +1,14 @@
 .icon-bar {
-  width: 36%;
-  height: 10%;
+  width: 343px;
+  height: 96px;
   background-color: rgba(230,230,230,0.3);
+  backdrop-filter: blur(64px);
   //overflow: auto;
   position: fixed;
   bottom: 0;
-  border-radius: 5px;
+  padding: 16px;
+  padding-bottom: 10px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
@@ -14,7 +17,7 @@
   width: 18%;
   padding: 12px;
   position: relative;
-  left: -14px;
+  left: -32px;
   transition: all 0.3s ease;
 }
 
@@ -23,9 +26,9 @@
 .overlay-colour {
   padding: 8px;
   position: absolute;
-  top: 68px;
+  top: 44px;
   bottom: 0;
-  left: 43px;
+  left: 27px;
   right: 0;
   height: 20%;
   width: 20%;
@@ -53,9 +56,9 @@
 .overlay-wheel {
   padding: 8px;
   position: absolute;
-  top: 1px;
+  top: -23px;
   bottom: 0;
-  left: 170px;
+  left: 113px;
   right: 0;
   height: 20%;
   width: 20%;
@@ -81,9 +84,9 @@
 .overlay-door {
   padding: 8px;
   position: absolute;
-  top: -79px;
+  top: -102px;
   bottom: 0;
-  left: 296px;
+  left: 199px;
   right: 0;
   height: 20%;
   width: 20%;
@@ -109,9 +112,9 @@
 .overlay-view {
   padding: 8px;
   position: absolute;
-  top: -4px;
+  top: 8px;
   bottom: 0;
-  left: 72.8%;
+  left: 78.8%;
   right: 0;
   height: 20%;
   width: 20%;
@@ -135,17 +138,20 @@
 //Dropup icon-colour
 
 .colour-dropup {
-  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  //background: linear-gradient(90deg, #e6e6e6 #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  //background: linear-gradient(90deg, #a1a09d 0%, rgba(230,230,230,0.3) 100%);
+  background: linear-gradient(90deg, #e6e6e6 0%, rgba(160,160,157,0.3) 100%);
   backdrop-filter: blur(64px);
   display: none;
   position: absolute;
-  width: 570px;
+  width: 333px;
   height: 170px;
+  padding: 16px 0 6px 41px;
   z-index: 1;
   border: 1px;
-  border-radius: 8px;
-  margin-top: -117px;
-  margin-left: -15px;
+  border-radius: 10px;
+  margin-top: -180px;
+  margin-left: -30px;
 }
 
 .colour-dropup a {
@@ -167,16 +173,20 @@
 //Wheel Dropup
 
 .wheel-dropup {
-  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  background: linear-gradient(90deg, #e6e6e6 0%, rgba(160,160,157,0.3) 100%);
   backdrop-filter: blur(64px);
   display: none;
   position: absolute;
-  width: 570px;
-  height: 75px;
+  width: 298px;
+  height: 131px;
+  padding-top: 9px;
+  padding-bottom: 23px;
+  padding-left: 80px;
   z-index: 1;
   border: 1px;
-  border-radius: 8px;
-  margin-top: -80px;
+  border-radius: 10px;
+  margin-top: -205px;
+  margin-left: -16px;
 }
 
 .wheel-dropup a {
@@ -186,24 +196,25 @@
 
 
 .dropup-wheel:hover .wheel-dropup {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
 //Door Dropup
 
-.door-dropup {
-  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
-  backdrop-filter: blur(64px);
-  display: none;
-  position: absolute;
-  width: 570px;
-  height: 70px;
-  z-index: 1;
-  border: 1px;
-  border-radius: 8px;
-  margin-top: -150px;
-}
+//.door-dropup {
+//  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+//  backdrop-filter: blur(64px);
+//  display: none;
+//  position: absolute;
+//  width: 570px;
+//  height: 70px;
+//  z-index: 1;
+//  border: 1px;
+//  border-radius: 8px;
+//  margin-top: -150px;
+//}
 
 .door-dropup a {
   padding: 10px 14px;
@@ -218,16 +229,20 @@
 //View Dropup
 
 .view-dropup {
-  background: linear-gradient(90deg, #1CAAD9 0%, rgba(28, 170, 217, 0.2) 100%);
+  background: linear-gradient(90deg, #e6e6e6 0%, rgba(160,160,157,0.3) 100%);
   backdrop-filter: blur(64px);
   display: none;
   position: absolute;
-  width: 570px;
+  width: 302px;
   height: 200px;
+  padding: 16px;
+  padding-bottom: 23px;
+  padding-left: 58px;
   z-index: 1;
   border: 1px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+  border-radius: 10px;
+  margin-bottom: 82px;
+  margin-left: -16px;
 }
 
 .view-dropup a {
@@ -247,61 +262,68 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   .icon-bar {
-    background-color: rgba(250,250,250,0.3);
+    background-color: linear-gradient(94.68deg, rgba(255, 255, 255, 0.3) -17.56%, rgba(255, 255, 255, 0) 95.06%);
+    backdrop-filter: blur(64px);
     display: grid;
-    width: 20%;
-    height: 40%;
-    margin-bottom: 105px;
+    width: 63px;
+    height: 296px;
+    margin-bottom: 71px;
     position: fixed;
     left: 15px;
+    padding: 2px;
+    padding-bottom: 0px;
+    padding-left: 17px;
   }
 
   .icon-bar a {
-    margin-left: 13px;
-    margin-top: 10px;
+    margin-left: -1px;
+    margin-top: 4px;
   }
 
   .colour-normal {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .wheel-normal {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .door-normal {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .view-normal {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   //Icon overlay image change & size for colour
 
   .colour-hover {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
   .overlay-colour {
-    left: 6px;
-    top: -223px;
+    left: 26px;
+    top: -145px;
   }
 
   .carpaint {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 
   .colour-dropup {
-    width: 290px;
-    height: 180px;
-    margin-top: -240px;
-    left: 112px;
+    width: 225px;
+    height: 153px;
+    margin-top: -162px;
+    left: 116px;
+    padding-left: 21px;
+    padding-bottom: 13px;
+    padding-top: 1px;
   }
 
 
@@ -313,47 +335,50 @@
 
   //Icon overlay image change & size for wheel
   .wheel-hover {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
   .overlay-wheel {
-    left: 6px;
-    top: -209px;
+    left: 27px;
+    top: -147px;
   }
 
   .rim {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
 
   .wheel-dropup {
-    width: 265px;
-    height: 180px;
-    margin-top: -186px;
-    left: 96px;
+    width: 173px;
+    height: 153px;
+    margin-top: -134px;
+    left: 103px;
+    padding-left: 34px;
+    padding-bottom: 15px;
+    padding-top: 1px;
   }
 
 
   .dropup-wheel:hover .wheel-dropup {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 
   //Icon overlay image change & size for door
   .door-hover {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .overlay-door {
-    left: 6px;
-    top: -207px;
+    left: 27px;
+    top: -162px;
   }
 
   .door {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
   .door-dropup {
     min-width: 150%;
@@ -365,25 +390,28 @@
 
   //Icon overlay image change & size for view
   .view-hover {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 
   .overlay-view {
-    left: 6%;
-    top: 212px;
+    left: 25px;
+    top: 170px;
   }
 
   .view {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 
   .view-dropup {
-    width: 300px;
-    height: 290px;
+    width: 165px;
+    height: 226px;
     margin-bottom: -40px;
-    left: 98px;
+    left: 102px;
+    padding-left: 30px;
+    padding-bottom: 13px;
+    padding-top: 1px;
   }
 
 }

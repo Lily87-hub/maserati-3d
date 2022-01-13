@@ -111,9 +111,9 @@ export class SketchFabViewer {
 
         document.getElementById('RIM_01').onclick = ()=>this.selectOptionRIM(this,'RIM_01');
         document.getElementById('RIM_01 W').onclick = ()=>this.setRimColor(this,'RIM_01', 'chrome');
-        // document.getElementById('RIM_01 B').onclick = ()=>this.setRimColor(this,'RIM_01', 'black');
+        document.getElementById('RIM_01 B').onclick = ()=>this.setRimColor(this,'RIM_01', 'black');
         document.getElementById('RIM_02').onclick = ()=>this.selectOptionRIM(this,'RIM_02');
-        // document.getElementById('RIM_02 W').onclick = ()=>this.setRimColor(this,'RIM_02', 'chrome');
+        document.getElementById('RIM_02 W').onclick = ()=>this.setRimColor(this,'RIM_02', 'chrome');
         document.getElementById('RIM_02 B').onclick = ()=>this.setRimColor(this,'RIM_02', 'black');
 
         document.getElementById('DOORS').onclick = ()=>this.setAnimation(this,0);
@@ -218,6 +218,7 @@ export class SketchFabViewer {
 
                                     self.rimMaterials['RIM_01'].black = item;
                                 }
+
 
                                 if (item.name === 'EXT_rim2') {
 
@@ -447,6 +448,7 @@ export class SketchFabViewer {
             this.rimMaterials['RIM_02'].chrome.stateSetID = this.invisibleMaterial.stateSetID;
             this.sketchfabAPI.hide(this.optionsRIM[1].id); 
             this.sketchfabAPI.setMaterial(this.rimMaterials['RIM_02'].chrome, {});
+
 
 
 
